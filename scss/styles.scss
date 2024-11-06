@@ -1,0 +1,58 @@
+
+*{ margin:0;
+    padding:0;
+    box-sizing: border-box
+}
+
+
+@import"../scss/mixin";
+
+.nav{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    text-transform: capitalize;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    object-fit: cover;
+    }
+
+
+@import"../scss/variable";
+.fondo-principal{
+    background-color:$color-fondo;
+    
+    }
+
+
+main{
+
+    margin: $imagen-main;
+    text-align: center;
+    
+    img{
+
+        width: 50%;
+        height: 50%;
+        object-fit: cover;
+    }
+    
+    }
+
+
+section{
+    margin: 20px;
+    padding: 20px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+footer{
+    text-transform: capitalize;
+    margin: 30px;
+    text-align: center;
+}
+
+
+@import"../scss/producto";
+

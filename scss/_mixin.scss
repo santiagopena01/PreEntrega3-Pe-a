@@ -1,0 +1,19 @@
+@mixin flex{
+    color:red ;
+    margin:25px 40px;
+    padding: 15px 50px;
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    align-items:start;
+}
+
+header{
+    @include flex; 
+    img{
+        width: 10%;
+        margin-right: 30px;
+}
+
+}
+
