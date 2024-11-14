@@ -1,41 +1,29 @@
 .producto {
-
     display: grid;
-    grid-template-columns:1fr;
-    grid-template-rows:repeat(3, 25%);
+    grid-template-columns: 1fr; // En pantallas pequeñas, una columna
+    grid-template-rows: repeat(3, minmax(200px, 25%)); // Para mayor flexibilidad, minmax
     gap: 50px;
-    margin:30px 20px;
-    align-content:center;
+    margin: 30px 20px;
+    align-content: center;
     
-    div{
-        img{
-
+    div {
+        img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            
         }
     }
 }
 
-
-
-
+// Media query para pantallas medianas (a partir de 600px)
 @media screen and (min-width: 600px) {
     .producto {
-        grid-template-columns:repeat(2,1fr) ;
-        grid-template-rows:repeat(2,44%) ;
+        grid-template-columns: repeat(2, 1fr); // Dos columnas
+        grid-template-rows: repeat(2, minmax(200px, 44%)); // Fila flexible con un mínimo de 200px
         gap: 30px;
-        
     }
     
-    .producto .imagen-cinco{  
-        grid-column: span 2;
-    
+    .producto .imagen-cinco {  
+        grid-column: span 2; // Este div ocupa 2 columnas
     }
-
-
 }
-
-
-

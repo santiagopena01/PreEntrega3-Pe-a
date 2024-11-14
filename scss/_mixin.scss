@@ -1,19 +1,20 @@
-@mixin flex{
-    color:red ;
-    margin:25px 40px;
+// Mixin Flex ajustado para mayor flexibilidad
+@mixin flex($justify: space-between, $align: start, $bgColor: black) {
+    margin: 25px 40px;
     padding: 15px 50px;
     display: flex;
-    background-color: black;
-    justify-content: space-between;
-    align-items:start;
+    justify-content: $justify;
+    align-items: $align;
+    background-color: $bgColor;
 }
 
-header{
-    @include flex; 
-    img{
+// Usamos el mixin para el header
+header {
+    @include flex(space-between, start, #262626); // Se puede ajustar el color del fondo
+    img {
         width: 10%;
         margin-right: 30px;
+    }
 }
 
-}
 

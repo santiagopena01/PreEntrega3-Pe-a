@@ -1,60 +1,77 @@
+/* Reiniciar márgenes y aplicar box-sizing */
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* Estilo del encabezado */
 header {
-color: red;
-margin: 25px 40px;
-padding: 15px 50px;
-display: flex;
-background-color: #262626;
-justify-content: space-between;
-align-items: start;
+    color: red;
+    margin: 25px 40px;
+    padding: 15px 50px;
+    display: flex;
+    background-color: #262626;
+    justify-content: space-between;
+    align-items: center; /* Ajuste de alineación */
 }
 header img {
-width: 10%;
-margin-right: 30px;
+    width: 10%;
+    margin-right: 30px;
 }
 
+/* Estilos de la barra de navegación */
 .nav {
-display: flex;
-gap: 10px;
-list-style: none;
-text-transform: capitalize;
-font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-font-size: 20px;
-object-fit: cover;
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    text-transform: capitalize;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    font-size: 20px;
+    object-fit: cover;
 }
 
+/* Fondo principal */
 .fondo-principal {
-background-color: #cfcfcf;
+    background-color: #cfcfcf;
 }
 
+/* Estilos del contenido principal */
 main {
-margin: 30px;
-text-align: center;
+    margin: 30px;
+    text-align: center;
 }
 main img {
-width: 50%;
-height: 50%;
-object-fit: cover;
+    width: 80%; /* Ampliación para dispositivos móviles */
+    height: auto;
+    object-fit: cover;
 }
 
+/* Sección de descripción */
 section {
-margin: 20px;
-padding: 20px;
-text-transform: capitalize;
-text-align: center;
+    margin: 20px;
+    padding: 20px;
+    text-transform: capitalize;
+    text-align: center;
 }
 
+/* Estilos para el footer */
 footer {
-text-transform: capitalize;
-margin: 30px;
-text-align: center;
+    background-color: #262626; /* Mismo color de fondo que el header */
+    padding: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+footer .nav {
+    gap: 15px;
+    font-size: 18px;
+}
+footer p {
+    margin-top: 10px;
+    font-size: 14px;
 }
 
+/* Estilo de la clase producto para galería */
 .producto {
     display: grid;
     grid-template-columns: 1fr;
@@ -75,6 +92,7 @@ text-align: center;
     object-fit: cover;
 }
 
+/* Responsividad para pantallas medianas */
 @media screen and (min-width: 600px) {
     .producto {
         grid-template-columns: repeat(3, 1fr); 
@@ -84,8 +102,13 @@ text-align: center;
     .producto div img {
         max-width: 280px; 
     }
+
+    main img {
+        width: 70%; /* Reducción para tabletas */
+    }
 }
 
+/* Responsividad para pantallas grandes */
 @media screen and (min-width: 900px) {
     .producto {
         gap: 30px; 
@@ -94,7 +117,8 @@ text-align: center;
     .producto div img {
         max-width: 200px; 
     }
+
+    main img {
+        width: 50%; /* Tamaño estándar para pantallas grandes */
+    }
 }
-
-
-/*# sourceMappingURL=main.css.map */

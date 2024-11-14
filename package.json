@@ -1,11 +1,11 @@
 {
-    "name": "nueva-carpeta",
+    "name": "low-risk-group-website",
     "version": "1.0.0",
-    "description": "",
+    "description": "Sitio web de Low Risk Group, una empresa de seguridad electrónica",
     "main": "index.js",
     "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+        "start": "echo 'Este es un proyecto frontend, no requiere ejecución de backend.'"
     },
-    "author": "",
+    "author": "Santaigo Peña",
     "license": "ISC"
 }

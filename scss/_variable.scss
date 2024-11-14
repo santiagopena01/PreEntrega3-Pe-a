@@ -1,2 +1,21 @@
+// Definición de variables
 $imagen-main: 30px; 
-$color-fondo:blue;
+$color-fondo: blue;
+
+// Uso de las variables
+header {
+    background-color: $color-fondo; // Utiliza el color azul como fondo
+    padding: $imagen-main; // Usa el valor de 30px como padding
+}
+
+.producto {
+    margin: $imagen-main; // Aplica 30px de margen a los productos
+
+    div {
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
